@@ -1,0 +1,8 @@
+
+.heroRoot { background: linear-gradient(180deg, #f4f8ff 0%, #eef3ff 100%); position: relative; transform-style: preserve-3d }
+
+.bgLayer { position: absolute; inset: 0; pointer-events: none; display:flex; align-items:center; justify-content:center; z-index: 1 }
+
+.shape { width: 320px; height: 220px; border-radius: 28px; background: linear-gradient(90deg, rgba(2,77,254,0.08), rgba(255,200,120,0.06)); filter: blur(14px); margin: 0 40px; opacity: 0.75 }
+
+@media (max-width: 768px) { .shape { width: 220px; height: 140px } }

@@ -1,0 +1,17 @@
+.bgRoot { position: absolute; inset: 0; pointer-events: none; z-index: 0; opacity: 1 }
+
+.container { position: absolute; inset: 0; display:flex; align-items:center; justify-content:center; overflow: hidden; perspective: 900px }
+
+.shapes { position: relative; width: 140%; height: 100%; transform-style: preserve-3d }
+
+.shape { position: absolute; width: 320px; height: 200px; border-radius: 22px; background: linear-gradient(135deg, rgba(255,215,140,0.10), rgba(255,200,80,0.06)); filter: blur(12px); transform-origin: center; box-shadow: 0 20px 60px rgba(255,180,60,0.06); opacity: 0.95 }
+
+.shape:nth-child(1) { left: 8%; top: 18% }
+.shape:nth-child(2) { left: 28%; top: 12% }
+.shape:nth-child(3) { left: 52%; top: 22% }
+.shape:nth-child(4) { left: 72%; top: 14% }
+.shape:nth-child(5) { left: 18%; top: 44% }
+.shape:nth-child(6) { left: 62%; top: 56% }
+
+@media (max-width: 1024px) { .shape { width: 240px; height: 150px; border-radius: 16px } }
+@media (max-width: 768px) { .shape { width: 160px; height: 110px; border-radius: 12px; filter: blur(10px) } }

@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Engine Oil (Genuine)",
+    "sku": "TVS-EG-1L",
+    "price": "\u20b9420",
+    "image": "/parts/engine-air-filter.png",
+    "desc": "High performance TVS genuine oil"
+  },
+  {
+    "name": "Front Brake Pads",
+    "sku": "TVS-FBP-160",
+    "price": "\u20b9620",
+    "image": "/parts/brake-pads.png",
+    "desc": "Disc-compatible, long life"
+  },
+  {
+    "name": "Air Filter",
+    "sku": "TVS-AF-125",
+    "price": "\u20b9210",
+    "image": "/parts/air-filter.png",
+    "desc": "ETFi compatible filter"
+  },
+  {
+    "name": "Spark Plug",
+    "sku": "TVS-SP-UG",
+    "price": "\u20b9150",
+    "image": "/parts/engine-air-filter.png",
+    "desc": "Universal TVS plug"
+  }
+]

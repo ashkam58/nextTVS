@@ -1,0 +1,80 @@
+[
+  {
+    "name": "TVS Apache RTR 160",
+    "slug": "tvs-apache-rtr-160",
+    "price": "\u20b91,24,999*",
+    "image": "/bikes/apache-rtr-1604v.png",
+    "mileage": "45 kmpl (claimed)",
+    "engine": "159.7 cc, air-cooled",
+    "brake": "Front Disc, Rear Drum",
+    "colors": [
+      "Racing Red",
+      "Pearl White",
+      "Matte Blue"
+    ],
+    "highlights": [
+      "Glide Through Technology (GTT)",
+      "Single-channel ABS",
+      "LED Headlamp"
+    ],
+    "whatsappTemplate": "Namaste, main Apache RTR 160 ki test ride book karna chahta/chahti hoon. Date/Time: __. Mera naam: __."
+  },
+  {
+    "name": "TVS Jupiter 125",
+    "slug": "tvs-jupiter-125",
+    "price": "\u20b984,999*",
+    "image": "/bikes/jupiter-110.png",
+    "mileage": "50+ kmpl (claimed)",
+    "engine": "124.8 cc, air-cooled",
+    "brake": "Front Drum, Rear Drum",
+    "colors": [
+      "Dawn Orange",
+      "IndiBlue",
+      "Pristine White"
+    ],
+    "highlights": [
+      "Largest under-seat storage",
+      "ETFi Technology",
+      "Metal body"
+    ],
+    "whatsappTemplate": "Namaste, main TVS Jupiter 125 ki test ride book karna chahta/chahti hoon. Date/Time: __. Mera naam: __."
+  },
+  {
+    "name": "TVS Raider 125",
+    "slug": "tvs-raider-125",
+    "price": "\u20b997,500*",
+    "image": "/bikes/TVS-Raider-125-motor.png",
+    "mileage": "57 kmpl (claimed)",
+    "engine": "124.8 cc, air-cooled",
+    "brake": "Front Disc, Rear Drum",
+    "colors": [
+      "Fiery Yellow",
+      "Wicked Black"
+    ],
+    "highlights": [
+      "LCD console",
+      "ETFi with IntelliGo",
+      "Under-seat storage"
+    ],
+    "whatsappTemplate": "Namaste, main TVS Raider 125 ki test ride chahata/chahti hoon. Date/Time: __. Mera naam: __."
+  },
+  {
+    "name": "TVS Ntorq XT",
+    "slug": "tvs-ntorq-xt",
+    "price": "\u20b91,05,450*",
+    "image": "/bikes/ntorq-125.jpg",
+    "mileage": "47 kmpl (claimed)",
+    "engine": "124.8 cc, air-cooled",
+    "brake": "Front Disc, Rear Drum",
+    "colors": [
+      "Neon Green",
+      "Marine Blue"
+    ],
+    "highlights": [
+      "SmartXonnect",
+      "Voice Assist",
+      "Split LED headlamp"
+    ],
+    "whatsappTemplate": "Namaste, main TVS Ntorq XT ki test ride book karna chahta/chahti hoon. Date/Time: __. Mera naam: __."
+  }
+]

@@ -1,0 +1,90 @@
+.overlayRoot {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1200; /* Adjusted to ensure it overlays only necessary elements */
+}
+
+.overlayRoot[data-open="true"] {
+  pointer-events: auto;
+  z-index: 1400; /* Higher z-index when menu is open */
+}
+
+.overlayBack {
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(6px) saturate(120%);
+  background: rgba(10, 12, 20, 0.35);
+  opacity: 0;
+  transition: opacity 260ms ease;
+  z-index: 1300; /* Ensure it is below the menu panel */
+}
+
+.overlayPanel {
+  position: fixed; /* Ensure it stays fixed in the viewport */
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 1400; /* Ensure it is above the backdrop */
+}
+
+.overlayInner {
+  width: 100%;
+  max-width: 720px;
+  min-height: 340px; /* Ensure enough height for all menu items */
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 12px;
+  padding: 40px 28px; /* More padding for better spacing */
+  box-shadow: 0 12px 40px rgba(2,6,23,0.6);
+  transform: translateY(0); /* Ensure it stays centered */
+  opacity: 0;
+  transition: transform 300ms cubic-bezier(.2,.9,.3,1), opacity 220ms ease;
+  pointer-events: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content inside the menu */
+  justify-content: center; /* Center menu vertically */
+  color: #fff; /* Ensure text is readable on dark background */
+  overflow-y: auto; /* Allow scrolling if content overflows */
+  max-height: 90vh; /* Prevent menu from exceeding viewport height */
+}
+.overlayInner[data-open="true"] {
+  transform: translateY(0); /* Ensure it stays centered */
+  opacity: 1;
+}
+
+.overlayInner { z-index: 2200; }
+
+.overlayHeader { display:flex; align-items:center; justify-content:flex-start; margin-bottom:16px }
+
+.overlayMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 18px; /* More gap for clarity */
+  margin: 28px 0;
+  align-items: center; /* Center menu items horizontally */
+}
+
+.overlayItem {
+  color: #fff;
+  font-size: 1.35rem;
+  text-decoration: none;
+  padding: 12px 16px;
+  border-radius: 8px;
+  transition: transform 140ms ease, background 140ms;
+  width: 100%;
+  max-width: 420px; /* keeps a nice centered column */
+  text-align: center;
+  background: rgba(255,255,255,0.02);
+  font-weight: 600;
+}
+
+.overlayItem:hover { transform: translateX(6px); background: rgba(255,255,255,0.03) }
+
+.overlayItem:focus { outline: 2px solid rgba(255,255,255,0.12); outline-offset: 3px }
+
+.overlayCTA { display:inline-block; background: #25D366; color: #002; padding: 10px 18px; border-radius: 8px; text-decoration:none; font-weight:700 }
+
+.overlayFooter { margin-top: 18px }
