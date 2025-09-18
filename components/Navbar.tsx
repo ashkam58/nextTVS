@@ -63,10 +63,22 @@ export default function Navbar() {
   }, [pathname])
 
   React.useEffect(() => {
+    // Let MUI Modal manage body scroll locking. Instead, ensure we close the
+    // mobile menu when the route changes so no stale state remains.
+  }, [/* no-op to keep eslint happy */])
+
+  // Close mobile overlay when navigating to a new pathname.
+  React.useEffect(() => {
+    if (open) setOpen(false)
+  }, [pathname])
+
+  // Extra safety: ensure body scroll isn't left locked by any earlier code.
+  React.useEffect(() => {
     const prev = document.body.style.overflow
-    if (open) document.body.style.overflow = 'hidden'
+    // on route change reset overflow
+    document.body.style.overflow = ''
     return () => { document.body.style.overflow = prev }
-  }, [open])
+  }, [pathname])
 
   return (
     <AppBar
@@ -123,7 +135,7 @@ export default function Navbar() {
             {/* sliding underline indicator */}
             <Box sx={{ position: 'absolute', bottom: 6, left: indicator.left, width: indicator.width, height: 3, bgcolor: 'secondary.main', borderRadius: 2, transition: 'left 160ms ease, width 160ms ease, opacity 160ms', opacity: indicator.opacity }} />
           </Box>
-          <Box sx={{ display: { xs: 'flex', md: 'none' }, ml: { xs: 'auto', md: 0 }, zIndex: 1500, pointerEvents: 'auto' }}>
+          <Box sx={{ display:'flex', justifyContent:'center', position: 'relative', zIndex: 2 }}>
             <IconButton color="inherit" onClick={() => setOpen(!open)} aria-label="Open menu">
               <MenuIcon />
             </IconButton>
@@ -134,6 +146,7 @@ export default function Navbar() {
           open={open}
           onClose={() => setOpen(false)}
           closeAfterTransition
+          keepMounted={false}
           slotProps={{
             backdrop: {
               sx: {
