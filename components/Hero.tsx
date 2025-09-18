@@ -2,6 +2,7 @@
 'use client'
 import * as React from 'react'
 import { Box, Button, Container, Stack, Typography } from '@mui/material'
+import Image from 'next/image'
 import Link from 'next/link'
 import anime from 'animejs'
 import styles from './Hero.module.css'
@@ -46,7 +47,7 @@ export default function Hero() {
           </Typography>
         </Stack>
         <Box sx={{ display:'flex', justifyContent:'center', position: 'relative', zIndex: 2 }}>
-          <img src="hero/mainhero.png" alt="Tahalka TVS - Begusarai" style={{maxWidth:'100%', borderRadius:16, boxShadow:'0 12px 40px rgba(0,0,0,0.15)'}}/>
+          <Image src="/hero/mainhero.webp" alt="Tahalka TVS - Begusarai" width={720} height={480} style={{borderRadius:16, boxShadow:'0 12px 40px rgba(0,0,0,0.15)'}} priority />
         </Box>
       </Container>
     </Box>
