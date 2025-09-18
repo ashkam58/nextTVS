@@ -1,0 +1,67 @@
+# Node
+node_modules/
+.npm/
+.pnpm-store/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Next.js build output
+.next/
+out/
+
+# Vercel
+.vercel/
+
+# Logs
+logs
+*.log
+
+# Editor directories and files
+.vscode/
+.idea/
+
+# OS files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# TypeScript
+*.tsbuildinfo
+
+# Mac
+*.DS_Store
+
+# Optional npm cache directory
+.npm
+
+# build
+dist/
+
+# JetBrains
+.idea/
+
+# Local env
+.env
+
+# public assets builds
+/public/hero
+/public/bikes
+/public/parts
+
+# Lockfiles
+package-lock.json
+pnpm-lock.yaml
+
+# Others
+coverage/
+coverage/**
+
+# Next.js telemetry
+.next/telemetry
