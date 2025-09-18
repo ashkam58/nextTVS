@@ -51,9 +51,7 @@ dist/
 .env
 
 # public assets builds
-/public/hero
-/public/bikes
-/public/parts
+# (track files in public/, remove specific ignores so real assets can be committed)
 
 # Lockfiles
 package-lock.json
