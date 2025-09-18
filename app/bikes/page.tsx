@@ -14,6 +14,8 @@ export default function BikesPage() {
     <Box>
   <PageBanner title="All Bikes & Scooters" subtitle="TVS bikes & scooters — test rides, offers, and easy finance." image="hero/heroTahalka.png" ctaLabel="See Offers" ctaHref="/" />
 
+  <ScrollRide imageSrc='/hero/scrollRidebike.png' alt='Rider' />
+
 
       <Container maxWidth="lg" sx={{py:4}}>
         <AnimateGridOnMount>
@@ -29,7 +31,7 @@ export default function BikesPage() {
         </AnimateGridOnMount>
       </Container>
 
-        <ScrollRide imageSrc='/hero/scrollRidebike.png' alt='Rider' />
+        
 
 
       <Container maxWidth="lg" sx={{py:4}}>
