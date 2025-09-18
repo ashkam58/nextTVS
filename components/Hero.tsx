@@ -47,7 +47,15 @@ export default function Hero() {
           </Typography>
         </Stack>
         <Box sx={{ display:'flex', justifyContent:'center', position: 'relative', zIndex: 2 }}>
-          <Image src="/hero/mainhero.webp" alt="Tahalka TVS - Begusarai" width={720} height={480} style={{borderRadius:16, boxShadow:'0 12px 40px rgba(0,0,0,0.15)'}} priority />
+          <Box sx={{ position: 'relative', width: { xs: '100%', md: '100%' }, height: { xs: 240, md: 480 }, maxWidth: 720 }}>
+            <Image
+              src="/hero/mainhero.webp"
+              alt="Tahalka TVS - Begusarai"
+              fill
+              style={{ objectFit: 'contain', borderRadius: 16, boxShadow: '0 12px 40px rgba(0,0,0,0.15)' }}
+              priority
+            />
+          </Box>
         </Box>
       </Container>
     </Box>
