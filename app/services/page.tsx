@@ -22,7 +22,6 @@ export default function ServicesPage() {
   return (
     <Box>
   <PageBanner title="TVS Service & Genuine Parts" subtitle="Certified service, genuine parts, aur pickup-drop facility. Book service on WhatsApp." image="/hero/servicehero.png" ctaLabel="Book Service" ctaHref="/contact" />
-  <ScrollRide imageSrc='/hero/tlogo.png' alt='Rider' />
 
       <Container maxWidth="lg" sx={{py:4}}>
         <Typography variant="h4" sx={{mb:2}}>Services</Typography>
@@ -40,6 +39,8 @@ export default function ServicesPage() {
             </Grid>
           </ScrollReveal>
         </AnimateGridOnMount>
+          <ScrollRide imageSrc='/hero/tlogo.png' alt='Rider' />
+
 
         <Button size="large" variant="contained" href="https://wa.me/917480012328?text=Service%20booking%20chahiye." target="_blank">
           Book Service on WhatsApp

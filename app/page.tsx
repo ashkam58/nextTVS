@@ -17,7 +17,6 @@ export default function HomePage() {
     <Box>
       <OfferMarquee />
       <Hero />
-  <ScrollRide imageSrc='/hero/tlogo.png'/>
       <Container maxWidth="lg" sx={{py:4}}>
         <Typography variant="h5" sx={{mb:2}}>Featured Bikes</Typography>
         <AnimateGridOnMount>
@@ -31,6 +30,7 @@ export default function HomePage() {
         </AnimateGridOnMount>
         <Button sx={{mt:2}} component={Link} href="/bikes">See all bikes</Button>
       </Container>
+                <ScrollRide imageSrc='/hero/tlogo.png'/>
 
       <Container maxWidth="lg" sx={{py:4}}>
         <Typography variant="h5" sx={{mb:2}}>TVS Service · Begusarai</Typography>

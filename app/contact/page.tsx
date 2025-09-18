@@ -11,7 +11,7 @@ export default function ContactPage() {
   return (
     <Box>
       <PageBanner title="Contact Tahalka TVS" subtitle="Visit our showroom or book service via WhatsApp. Hum aapki madad karenge." image="/bikes/raider_125.svg" ctaLabel="Get Directions" ctaHref="https://maps.google.com/?q=NH-28,+Teghra+Chowk,+Begusarai,+Bihar+851133" />
-      <ScrollRide />
+      
       <Container maxWidth="lg" sx={{py:4}}>
         <Typography variant="h4" sx={{mb:2}}>Contact · Tahalka TVS</Typography>
         <AnimateGridOnMount>
@@ -40,6 +40,7 @@ export default function ContactPage() {
                     <Button variant="outlined" href={"https://wa.me/917480012328?text="+encodeURIComponent("Namaste, mujhe service/parts chahiye.")} target="_blank">Ask Service</Button>
                   </Stack>
                 </CardContent></Card>
+                <ScrollRide imageSrc='/hero/scrollRidecontact.png' alt='Rider' />
               </Grid>
             </Grid>
           </ScrollReveal>
