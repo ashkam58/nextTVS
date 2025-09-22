@@ -10,6 +10,8 @@ const pages = [
   { label: 'Home', href: '/' },
   { label: 'Bikes', href: '/bikes' },
   { label: 'Services', href: '/services' },
+  { label: 'FAQ', href: '/faq' },
+  { label: 'Blog', href: '/blog' },
   { label: 'Contact', href: '/contact' }
 ]
 
@@ -180,3 +182,6 @@ export default function Navbar() {
     </AppBar>
   )
 }
+
+
+
